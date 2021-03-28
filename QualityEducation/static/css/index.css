@@ -1,6 +1,7 @@
 body {
     width: 98.9vw;
-    height: 100vh;
+    min-height: 100vh;
+    height : auto;
     margin: 0;
     padding: 0;
 }
@@ -40,12 +41,21 @@ nav .authorise button:focus {
     outline: thick double white;
 }
 footer{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-around; */
     min-height : 80vh;
     height: auto;
+}
+footer img{
+    max-width : 200px;
+    width : auto;
+}
+
+footer a{
+    padding : 10px;
 }
 
 .auth_window {
