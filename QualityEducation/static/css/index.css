@@ -1,0 +1,192 @@
+body {
+    width: 98.9vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    width : 100%;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 90vh;
+    height: auto;
+}
+
+main section:nth-child(3){
+    grid-column: span 2;
+}
+
+nav .authorise {
+    padding: 0 10px;
+}
+
+nav .authorise button {
+    padding: 5px;
+    font-weight: 800;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+nav .authorise button span:hover {
+    text-decoration: underline;
+}
+
+nav .authorise button:focus {
+    outline: thick double white;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height : 80vh;
+    height: auto;
+}
+
+.auth_window {
+    position: absolute;
+    top : 0;
+    width: 100%;
+    height: 100%;
+    display: -ms-grid;
+    display: grid;
+    background: rgba(0, 0, 0, 0.5);
+    place-items: center;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+.auth_window .login {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto 1fr auto;
+    grid-template-rows: auto 1fr auto;
+    max-width: 400px;
+    width: 100%;
+    min-height: 250px;
+    max-height: 350px;
+    height: auto;
+    background: #555;
+    border: 1px solid black;
+}
+
+.auth_window .login .switch {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.auth_window .login .switch button {
+    padding: 10px 0;
+    font-size: 1.2rem;
+    font-weight: 900;
+    width: 100%;
+    height: 100%;
+}
+
+.auth_window .login form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transition: display linear 0.5s;
+    transition: display linear 0.5s;
+}
+
+.auth_window .login form input {
+    padding: 5px;
+    font-size: 1.1rem;
+    width: 100%;
+    margin: 5px 0;
+    border-radius: 30px;
+    background-color: #444;
+    border: 1px solid black;
+    outline: none;
+    color: #888;
+}
+
+.auth_window .login form input:focus {
+    background: lightgray;
+}
+
+.auth_window .login form input[type="submit"] {
+    border: 1px solid green;
+    color: green;
+    cursor: pointer;
+}
+
+.auth_window .login form input[type="submit"]:hover {
+    color: white;
+    background-color: green;
+}
+
+.auth_window .login form input[type="submit"]:active {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.auth_window .login #signup_form {
+    display: none;
+    height: auto;
+}
+
+.auth_window .login .other_oth_options {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding: 5px 0;
+}
+
+.auth_window .login .other_oth_options img {
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.auth_window .remove {
+    position: absolute;
+    background: white;
+    color: #555;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.auth_window .remove span {
+    font-weight: 700;
+    padding: 5px;
+}
+
+.auth_window .remove span:hover {
+    font-weight: 1000;
+    color: #000;
+}
